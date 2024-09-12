@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Image Gallery</title>
+    </head>
+<body>
+    <!-- Heading Name -->
+    <div class="heading">
+      <h1>Sink Monitoring</h1>
+    </div>
+      <!-- Image Gallery section all image in one div -->
+
+      <div>
+        <label for="category">Region:</label>
+        <select id="category" onchange="categoryChanged()">
+          <option value="all">All</option>
+          <option value="sink">Sink</option>
+          <option value="stove-top">Stove Top</option>
+        </select>
+      </div>
+
+
+
+
+    <div id="build"></div>
+    <button onclick="loadMore()">Load More</button>
+
+    <label for="page-number">Page Number:</label>
+    <input type="text" id="page-number" name="page-number">
+    <button onclick="pageChange()" type="submit">Submit</button>
+
+    <label for="page-number">You're on Page <span id="page"></span>:</label>
+
+
+      <script src="script.js"></script>
+  </body>
+</html>
